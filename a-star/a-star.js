@@ -28,7 +28,7 @@ function Spot(x, y) {
             fill(0);
         }
         noStroke();
-        rect(this.x * w, this.y * h, w, h);
+        ellipse(this.x * w + w / 2, this.y * h + h / 2, w, h);
     }
 
     this.addNeighbors = function (grid) {
