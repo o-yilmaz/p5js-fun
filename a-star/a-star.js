@@ -1,3 +1,6 @@
+// NOTE: This code is not mine.
+// It's from https://www.youtube.com/watch?v=aKYlikFAV4k
+
 var cols = 50;
 var rows = 50;
 var grid = new Array(cols);
