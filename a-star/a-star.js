@@ -1,9 +1,9 @@
-// NOTE: This code is not mine.
-// It's from https://www.youtube.com/watch?v=aKYlikFAV4k
+// NOTE: This is from https://www.youtube.com/watch?v=aKYlikFAV4k
 
 var cols = 50;
 var rows = 50;
 var grid = new Array(cols);
+var wallDensity = 0.4;
 
 var openSet = [];
 var closedSet = [];
@@ -22,7 +22,7 @@ function Spot(x, y) {
     this.previous;
     this.wall = false;
 
-    if (random(1) < 0.4)
+    if (random(1) < wallDensity)
         this.wall = true;
 
     this.show = function (color) {

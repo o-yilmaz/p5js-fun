@@ -93,7 +93,7 @@ function draw() {
         // keep going
 
         // this line is the only difference between breadth-first and depth-first.        
-        var current = openSet.shift();
+        var current = openSet.pop();
 
         if (current === end) {
             noLoop();
